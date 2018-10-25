@@ -1,0 +1,64 @@
+{% include 'polls/header.html' %}
+
+<style>
+
+    </style>
+
+    <div class="container contact">
+        <div class="row">
+        <div class="col-md-6">
+            <div class="mektub">
+                <i class="fa fa-envelope"></i>
+                <h3 class="text-center">Məktub göndər</h3>
+            </div>
+
+        <form action="/contact.php">
+
+                    <input type="email" id="fname" name="firstname" placeholder="E-poçt">
+
+
+
+                    <input type="text" id="lname" name="lastname" placeholder="Məktubun mövzusu">
+
+
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Məktubun mətni" style="height:200px"></textarea>
+                </div>
+           <button type="button" class="btn"><i class="fa fa-send-o"></i> Göndər</button>
+        </form>
+    </div>
+
+        <div class="col-md-6">
+            <div class="unvan">
+                <i class="fa fa-map-marker"></i>
+                <h3 class="text-center">Ünvan</h3>
+                <div id="map">
+
+                </div>
+                <p>Azərbaycan Respublikasının Dövlət Statistika Komitəsi <br>Bakı, AZ 1136, İnşaatçılar prospekti, 81<br>Faks : (+994 12) 538 24 42 Tel : (+994 12) 538 21 39</p>
+
+                <script>
+                    function initMap() {
+                        var uluru = {lat: 40.383067, lng: 49.822208};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 16,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwzEW5_pRCUx_Mk2yCq7kZhKoC0Be3Po4&callback=initMap">
+                </script>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% include 'polls/footer.html' %}
+

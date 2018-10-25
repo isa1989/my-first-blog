@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Statistical Information Portal</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <link href="{% static 'css/index.css' %}" rel="stylesheet">
+
+
+
+   </head>
+   <body>
+      <div class="navbr">
+         <div class=" container">
+            <!-- <a href="#">Home</a>
+               <a href="#">Search</a> -->
+            <button type="button" class="btn btn-warning btn-sm">Daxil ol</button>
+            <button type="button" class="btn btn-info btn-sm">Qeydiyyat</button>
+         </div>
+      </div>
+      <div class="container logo-back">
+         <div class="row main-logo">
+            <div class="col-md-12 col-xs-12">
+
+
+               <a class="" href="{% url 'polls:index' %}"><img src="{% static 'img/logo.png' %}"  class="main_logo img-responsive" width="319"></a>
+            </div>
+         </div>
+      </div>
+      <nav class="navbar navbar-expand-md sidebarNavigation">
+         <div class="container">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+            <span class="sr-only">Toggle navigation</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+               <ul class="nav navbar-nav nav-flex-icons ">
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:index' %}">Əsas səhifə</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:about' %}">Haqqımızda</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:xidmet' %}">Xidmətlər</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:learn' %}">Statistika öyrən</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:dictionary' %}">Statistik lüğət</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="{% url 'polls:contact' %}">Əlaqə</a>
+                  </li>
+                  <!--  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">Dropdown</a>
+                     <div class="dropdown-menu" aria-labelledby="dropdown01">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Another action</a>
+                         <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                     </li> -->
+               </ul>
+               <form class="mx-2 ml-auto d-inline w-30">
+                  <div class="input-group">
+                     <input type="text" class="form-control border border-right-0" placeholder="Axtar...">
+                     <span class="input-group-append">
+                     <button class="btn border border-left-0" type="button">
+                     <i class="fa fa-search"></i>
+                     </button>
+                     </span>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </nav>
+<script>
+window.onload = function () {
+   if (window.jQuery) {
+      $(document).ready(function () {
+         $(".sidebarNavigation .navbar-collapse").hide().clone().appendTo("body").removeAttr("class").addClass("sideMenu").show();
+         $("body").append("<div class='overlay'></div>");
+         $(".navbar-toggle, .navbar-toggler").on("click", function () {
+            $(".sideMenu").addClass($(".sidebarNavigation").attr("data-sidebarClass"));
+            $(".sideMenu, .overlay").toggleClass("open");
+            $(".overlay").on("click", function () {
+               $(this).removeClass("open");
+               $(".sideMenu").removeClass("open")
+            })
+         });
+         $("body").on("click", ".sideMenu.open .nav-item", function () {
+            if (!$(this).hasClass("dropdown")) {
+               $(".sideMenu, .overlay").toggleClass("open")
+            }
+         });
+         $(window).resize(function () {
+            if ($(".navbar-toggler").is(":hidden")) {
+               $(".sideMenu, .overlay").hide()
+            } else {
+               $(".sideMenu, .overlay").show()
+            }
+         })
+      })
+   } else {
+      console.log("sidebarNavigation Requires jQuery")
+   }
+}
+</script>

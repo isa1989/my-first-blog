@@ -1,0 +1,674 @@
+def contacts(request):
+    if request.method == 'POST':
+        form = NameForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'polls/contact.html', {'form': form})
+    else:
+        form = NameForm()
+
+    return render(request, 'polls/contact.html', {'form': form})
+
+
+
+<div class="col-md-4 col-sm-12">
+      <div class="card mb-4">
+        <div class="card-header text-center ">
+          <h5>Regresiya analizi</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>Pek çok araştırmanın başında Alfa (1.tip hata) 0.05 olarak kabul edilir. Yani hipotezde en fazla %5’lik bir hata öngörülmektedir.</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Regressiya analizi</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi, Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          	</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card mb-4">
+        <div class="card-header text-center ">
+          <h5>Analitik tədqiqatların təhlili</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>Pek çok araştırmanın başında Alfa (1.tip hata) 0.05 olarak kabul edilir. Yani hipotezde en fazla %5’lik bir hata öngörülmektedir.</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Regressiya analizi</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi, Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          	</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card mb-4">
+        <div class="card-header text-center ">
+          <h5>Analitik tədqiqatların təhlili</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>Pek çok araştırmanın başında Alfa (1.tip hata) 0.05 olarak kabul edilir. Yani hipotezde en fazla %5’lik bir hata öngörülmektedir.</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Regressiya analizi</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi, Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          	</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card mb-4">
+        <div class="card-header text-center ">
+          <h5>Analitik tədqiqatların təhlili</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>Pek çok araştırmanın başında Alfa (1.tip hata) 0.05 olarak kabul edilir. Yani hipotezde en fazla %5’lik bir hata öngörülmektedir.</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Regressiya analizi</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi, Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          	</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4  col-sm-12">
+      <div class="card mb-4">
+        <div class="card-header text-center ">
+          <h5>Analitik tədqiqatların təhlili</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>Pek çok araştırmanın başında Alfa (1.tip hata) 0.05 olarak kabul edilir. Yani hipotezde en fazla %5’lik bir hata öngörülmektedir.</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Regressiya analizi</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi, Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,  Regressiya analizi,
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+((((((((((((({% include 'polls/header.html' %}
+<div class="services-cards">
+	<h1>Xidmətlər</h1>
+{% for xidmet in xidmet_list%}
+<div class="container">
+
+  <hr>
+  <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <div class="card mb-4"> <!-- -->
+        <div class="card-header text-center ">
+          <h5>{{xidmet.title_s}}</h5>
+        </div>
+        <div class="card-body">
+            <div>
+            <p>{{xidmet.content_s}}</p>
+
+            <!-- MODAL BUTTON STARTS -->
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+            Daha ətraflı
+          </button>
+
+          <!-- The Modal -->
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">{{xidmet.title_s}}</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                   {{xidmet.content_s}}
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Bağla</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--MODAL BUTTON ENDS  -->
+          </div>
+        </div>
+      </div><!-- -->
+
+    </div>
+ {% endfor %}
+{% include 'polls/footer.html' %}</div></div></div>)))))))))))
+
+
+((((headcss
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("ProximaNova.otf");
+}
+
+* {
+  font-family: ProximaNova;
+}
+
+html,
+body {
+  font-family: ProximaNova;
+  height: 100%;
+  width: 100%;
+}
+
+
+/*TOP NAVBAR STARTS*/
+
+.navbr {
+  width: 100%;
+  background-color: #F4F2F2;
+  overflow: auto;
+  margin: 0;
+  padding: 5px;
+  text-align: right;
+}
+
+.navbr li {
+  padding: 5px 0;
+}
+
+.navbr a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+
+.navbr a:hover {
+  background-color: #2B364D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbr a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+/*TOP NAVBAR ENDS*/
+
+.overlay,
+.sideMenu {
+  position: fixed;
+  bottom: 0
+}
+
+.overlay {
+  top: 0;
+  left: -100%;
+  right: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 998;
+  transition: all ease 0.2s;
+  cursor: pointer;
+}
+
+.overlay.open {
+  left: 0;
+  right: 0;
+}
+
+.sidebarNavigation {
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 999;
+  justify-content: flex-start;
+}
+
+.sidebarNavigation .leftNavbarToggler {
+  margin-right: 10px;
+  order: -1;
+}
+
+.sideMenu {
+  left: -100%;
+  top: 0;
+  transition: all ease 0.5s;
+  overflow: hidden;
+  width: 70%;
+  z-index: 999;
+  max-width: 80%;
+  margin-bottom: 0;
+  padding: 1rem;
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+}
+
+.sideMenu.open {
+  left: 0;
+  display: block;
+  overflow-y: auto
+}
+
+.sidebarNavigation {
+  width: 100%;
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  /*
+background: #42275a;
+background: -webkit-linear-gradient(59deg, #734b6d, #42275a);
+background: linear-gradient(59deg, #734b6d, #42275a);*/
+  box-shadow: 0 2px 15px -2px rgba(0, 0, 0, .5);
+}
+
+#nav-toggle-button span {
+  background-color: #fff;
+  border-color: red;
+}
+
+#nav-toggle-button:hover {
+  background-color: #007CA2;
+}
+
+#navbarsExampleDefault .navbar-nav>li>a {
+  font-size: 15px;
+  color: #fff;
+  padding: 14px 16px;
+}
+
+#navbarsExampleDefault .navbar-nav>li>a:hover {
+  /*box-shadow: inset 0 -0.3em 0 0 #007CA2;*/
+  background-color: #fff;
+  color: #383838;
+  transition: 0.4s;
+}
+
+.sidebarNavigation {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  padding: 10px;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+  width: 16px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
+}
+
+.main-logo {
+  margin: 20px auto;
+}
+
+))){% load static %}
+{% include 'polls/header.html' %}
+<div id="learn_stat">
+   <div class="container">
+      <h1>Statistika öyrən</h1>
+      <div class="v-tab">
+         <div class="row">
+            <div class="col-md-3 col-xs-12">
+               <h4>Mövzular</h4>
+               <ul class="v-tab_tab-head">
+                  <li class="active" rel="vtab1">Statistika haqqında anlayış</li>
+                  <li rel="vtab2">Statistika elminin sahələri</li>
+                  <li rel="vtab3">Statistika müsahidəsinin nəzəriyyəsi</li>
+                  <li rel="vtab4">Statistika materiallarının yekunlaşdırılması</li>
+                  <li rel="vtab5">Statistika qruplaşdırmasının növləri</li>
+                  <li rel="vtab6">Çoxölçülü qruplaşdırma</li>
+                  <li rel="vtab7">Bölgü sıraları</li>
+                  <li rel="vtab8">Statistika cədvəlləri və qrafiklər</li>
+                  <li rel="vtab9">Statistika məlumatının qrafik üsulu ilə təsviri</li>
+                  <li rel="vtab10">Statistika göstəriciləri</li>
+                  <li rel="vtab11">Mütləq göstəricilər</li>
+                  <li rel="vtab12">Nisbi göstəricilər</li>
+                  <li rel="vtab13">Statistikada orta kəmiyyət nəzəriyyəsi</li>
+                  <li rel="vtab14">Orta kəmiyyətinin mahiyyəti və statistika elmində onun əhəmiyyəti</li>
+               </ul>
+            </div>
+            <div class="col-md-9 col-xs-12">
+               <div class="v-tab_container">
+                  <!-- #tab1 -->
+                  <div id="vtab1" class="v-tab_content">
+                     <h3>Statistika haqqında anlayış</h3>
+                     <hr>
+                     <p>Bazar münasibətləri şəraitində statistika hər şeyi bilmək qüdrətinə malikdir.Sosial-iqtisadi hadisələrin dərk edilməsində,onların inkişaf qanunauyğunluqlarının öyrənilməsində statistika qüdrətli vasitədir. Bunu nəzərə alaraq hələ XX əsrin əvvələrində məşhur ingilis statistiki U-Dj Reyxman “ Statistikanın tətbiqi “ adlı əsərində yazmışdır: “Biz statistika əsrində yaşayırıq”. Reyxmanın bu sözlərini
+                     tamamilə XXI əsrə də aid etmək olar. Bəli, XXI əsri statistikasız düşünmək mümkün deyildır. Biz XXI əsrdə statistika elminin insan fəaliyyətinin bütün sahələrində geniş miqyasda tətbiqi dövründə yaşayırıq. Hər bir təbiət hadisələri və insan fəalliyyətinin bütün cəhətləri statistika göstəricilərinin köməyilə ölçülür və ifadə olunur. Statistika məlumatı çox inandırıçı fakt kimi insanlarda müəyyən emosiyanın yaranmasına səbəb olur. Statistikanın öz dili – “rəqəm dili” vardır. Rəqəm dili hər cür gözəl sözlərdən daha inandırıcı olur. Ona görə də hər bir idarəedici orqan işçiləri və tədqiqatçılar rəqəm dili olan statistikadan tez-tez istifadə etməli olurlar. Bazar iqtisadiyyatı statistikadan istifadə etmənin əhəmiyyətini daha da artırmışdır. <br>
+                     Müasir bazar münasibətləri şəraitində statistika terminindən (istilahından) müxtəlif mənada istifadə edilir. Belə ki, çox tez-tez statistika külliyyatlarında və dövrü mənada dərc edilən məlumatı statistika adlandırırlar. Bu məlumatlar canlı
+                     rəqəmlər olub, xalqımızın ayrı-ayrı fəaliyyət sahələrində əldə etdikləri nəticələri hər cür sözdən daha aydın xarakterizə etmək imkanına malikdirlər. <br>Respublikanın Dövlət Statistika Komitəsi hər il “Azərbaycanın statistik göstəriciləri” adlı statistika
+                     məcmuəsini nəşr etdirir. Bu məcmuədə nəşr olunmuş məlumatlar canlı rəqəmlər olub, müxtəlif fəaliyyət sahələrində xalqımızın əməyi əsasında yaradılmış nəticələri daha dolğun, əyani şəkildə xarakterizə edir. 2003- cü ildə Azərbaycan Respublikası Dövlət Statistika Komitəsinin nəşr etdirdiyi “Azərbaycanın statistik göstəriciləri “ adlı statistika məcmuəsində göstərilir ki, 2002 – ci ildə respublikada qaz kondensatı da daxil olmaqla neft hasilatı 15.3 milyon ton, təbii qaz hasilatı 5144 min kub metr, elektrik enerjisi istehsalı 18701 milyon kilovatt-saat olmuşdur. <br> Statistika orqanları tərəfindən müntəzəm olaraq insan fəaliyyətinin müxtəlif sahələri üzrə toplanmış kütləvi məlumat da statistika adlanır. Kütləvi statistika müşahidələri əsasında ölkənin əhalisini, iqtisadiyyatını, mədəniyyətini, əhalinin təhsilini və əhalinin digər fəaliyyət sahələrini xarakterizə edən məlumatları statistika adlandırmaq olar. Bütün bunlarla bərabər, elmlər sistemində mühüm yer tutan, özünün xüsusi predmeti və tədqiqat metodu olan, yəni çox mühüm bilik sahəsi olan statistika fənni mövcuddur. Statistika orqanları tərəfindən müntəzəm olaraq insan fəaliyyətinin müxtəlif sahələri üzrə toplanmış kütləvi məlumat da statistika adlanır. Kütləvi statistika müşahidələri əsasında ölkənin əhalisini, iqtisadiyyatını, mədəniyyətini, əhalinin təhsilini və əhalinin digər fəaliyyət sahələrini xarakterizə edən məlumatları statistika adlandırmaq olar. Bütün bunlarla bərabər, elmlər sistemində mühüm yer tutan, özünün xüsusi predmeti və tədqiqat metodu olan, yəni çox mühüm bilik sahəsi olan statistika fənni mövcuddur.
+                     </p>
+                  </div>
+                  <!-- #tab2 -->
+                  <div id="vtab2" class="v-tab_content">
+                     <h3>Statistika elminin sahələri</h3>
+                     <hr>
+                     <p>Dui sociosqu vitae varius nulla habitasse inceptos pharetra feugiat curabitur, nibh molestie est semper mattis malesuada viverra auctor, duis pulvinar quam diam scelerisque ut nullam condimentum ut per conubia feugiat ultricies tristique dictum.</p>
+                  </div>
+                  <!-- #tab3 -->
+                  <div id="vtab3" class="v-tab_content">
+                     <h3>Statistika müsahidəsinin nəzəriyyəsi</h3>
+                     <hr>
+                     <p>Morbi cursus dapibus ut donec commodo consequat arcu turpis hendrerit luctus nulla aliquam tempor diam massa faucibus vitae vehicula, ultricies volutpat nullam phasellus dui auctor senectus morbi tellus potenti iaculis bibendum ipsum sodales non.</p>
+                  </div>
+                  <!-- #tab4 -->
+                  <div id="vtab4" class="v-tab_content">
+                     <h3>Statistika materiallarının yekunlaşdırılması</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab5 -->
+                  <div id="vtab5" class="v-tab_content">
+                     <h3>Statistika qruplaşdırmasının növləri</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab6 -->
+                  <div id="vtab6" class="v-tab_content">
+                     <h3>Çoxölçülü qruplaşdırma</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab7 -->
+                  <div id="vtab7" class="v-tab_content">
+                     <h3>Bölgü sıraları</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab8 -->
+                  <div id="vtab8" class="v-tab_content">
+                     <h3>Statistika cədvəlləri və qrafiklər</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab9 -->
+                  <div id="vtab9" class="v-tab_content">
+                     <h3>Statistika məlumatının qrafik üsulu ilə təsviri</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab10 -->
+                  <div id="vtab10" class="v-tab_content">
+                     <h3>Statistika göstəriciləri</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab11 -->
+                  <div id="vtab11" class="v-tab_content">
+                     <h3>Mütləq göstəricilər</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab12 -->
+                  <div id="vtab12" class="v-tab_content">
+                     <h3>Nisbi göstəricilər</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab13 -->
+                  <div id="vtab13" class="v-tab_content">
+                     <h3>Statistikada orta kəmiyyət nəzəriyyəsi</h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+                  <!-- #tab14 -->
+                  <div id="vtab14" class="v-tab_content">
+                     <h3>Orta kəmiyyətinin mahiyyəti və statistika elmində onun
+                        əhəmiyyəti
+                     </h3>
+                     <hr>
+                     <p>Per ligula mollis vulputate tortor urna platea non maecenas fames, maecenas ante senectus suspendisse ultrices aptent torquent laoreet scelerisque ut integer arcu magna ultricies mollis.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+   $(".v-tab_content").hide();
+   $(".v-tab_content:first").show();
+
+   $(".v-tab_tab-head li").click(function() {
+
+     $(".v-tab_content").hide();
+     var activeTab = $(this).attr("rel");
+     $("#"+activeTab).fadeIn();
+     $(".v-tab_tab-head li").removeClass("active");
+     $(this).addClass("active");
+   });
+
+
+</script>
+{% include 'polls/footer.html' %}
+
+ <div class="col-md-8">
+            <h3>Anlayışın izahı</h3>
+            <hr>
+            <div id="tab1-1{{word.id}}">
+               <p>{{words.word_exp}}</p>
+            </div>
+         </div>
